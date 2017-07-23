@@ -116,4 +116,47 @@ print()
 # >>=               x >>= 5         x = x >> 5
 # <<=               x <<= 5         x = x << 5
 
+# special operators
+
+# Python language offers some special type of operators like identity operator or the membership operator.
+
+## identity operators
+
+# 'is' and 'is not' are the identity operators of Python. They are used to check if two variables are located on the same memory place.
+
+# Let's assume x = True
+
+# Operator	Meaning							Example
+#  is		True if the variables refer to the same object		x is True
+#  is not	True if the operands do not refer to the same object	x is not True
+
+x = True
+
+print(x is True)
+print(x is not True)
+
+x1 = 5
+y1 = 5
+x2 = 'hello'
+y2 = 'hello'
+x3 = [1, 2, 3]
+y3 = [1, 2, 3]
+
+print(x3 is y3)  # x3 and y3 are lists. They are equal but do not refer to the same object.
+
+## membership operators
+
+# Operator	Meaning
+#  in		True if value/variable is found in the sequence		5 in x
+#  not in	True if value/variable is not found in the sequence	5 not in x
+
+# Important note: In dictionary you can only test if the key is present, whereas you cannot test if a value is present.
+
+x = 'Hello World'
+y = {1: 'a', 2: 'b'}
+
+print('H' in x)
+print(1 in y)
+print('a' in y)
+
 

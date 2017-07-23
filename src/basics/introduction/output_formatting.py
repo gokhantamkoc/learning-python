@@ -14,6 +14,10 @@ print('I love {0} and {1}'.format('bread','butter'))
 print('I love {1} and {0}'.format('bread','butter'))
 # Output: I love butter and bread
 
+# We can use keyword args to format a string.
+
+print('Hello {name}'.format(name='Gokhan'))
+
 # We can even format strings like the old sprintf() style used in C programming language.
 # We use the % operator to accomplish this.
 

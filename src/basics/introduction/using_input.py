@@ -14,3 +14,6 @@ print(type(num))
 
 print(int(num))
 print(float(num))
+
+print(eval('2+3'))
+print(int('2+3'))

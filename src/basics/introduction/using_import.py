@@ -8,5 +8,5 @@ import sys                  #
 
 print(math.pi)
 print(pi)
-print(sys.path)
+print(sys.path)		    # while importing a module, Python looks at several places defined in sys.path
 
