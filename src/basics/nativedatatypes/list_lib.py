@@ -293,6 +293,44 @@ print(all(l))
 l = [1, 3, 4, 0]
 print(all(l))
 
+# sorting
+
+l.sort()
+print(l)
+
+# reversing
+l.reverse()
+print(l)
+
+# count() # of occurrence of an item in a list
+print(l.count(0))           # in the list there is only one 0(zero)
+
+# there are cases when you need to change your list without losing its initial state.
+# deep copy(using assignment operator '='): will not solve this case
+# shallow copy(using copy() method): will solve this case
+
+
+# deep copy
+
+l = [1, 3, 4, 0]
+
+deep_copied_list = l
+deep_copied_list[0] = 2
+
+print('original_list:', l)
+print('deep_copied_list:', deep_copied_list)
+
+# shallow copy
+
+l = [1, 3, 4, 0]
+
+shallow_copied_list = l.copy()
+shallow_copied_list[0] = 2
+
+print('original_list:', l)
+print('shallow_copied_list:', shallow_copied_list)
+
+
 # Important: empty string is true
 s = ''
 print(all(s))
